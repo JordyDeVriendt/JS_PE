@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Form</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+</head>
+
+<body>
+  <div class="container">
+    <h1>Registreer</h1>
+    <p>
+      Meld je aan bij Anoroc Services, wij beschermen jouw software tegen
+      malware!
+    </p>
+    <div class="row">
+      <div class="col-lg-8">
+        <div class="container">
+          <form id="form">
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="form-group">
+                  <label for="Voornaam">Voornaam</label>
+                  <input type="text" class="form-control" id="Voornaam" placeholder="Uw voornaam" />
+                </div>
+              </div>
+
+              <div class="col-lg-6">
+                <div class="form-group">
+                  <label for="Naam">Naam</label>
+                  <input type="text" class="form-control" id="Naam" placeholder="Uw naam" />
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="form-group">
+                  <label for="Gebruikersnaam">Gebruikersnaam</label>
+                  <input type="text" class="form-control" id="Gebruikersnaam" placeholder="u911236" />
+                </div>
+              </div>
+
+              <div class="col-lg-6">
+                <div class="form-group">
+                  <label for="E-mailadres">E-mailadres</label>
+                  <input type="email" class="form-control" id="E-mailadres" placeholder="E-mailadres" />
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="form-group">
+                  <label for="Wachtwoord">Wachtwoord</label>
+                  <input type="password" class="form-control" id="Wachtwoord" />
+                </div>
+                <small id="WachtwoordHelp" class="form-text text-muted">Je Wachtwoord moet minstens 8 tekens lang
+                  zijn.</small>
+              </div>
+
+              <div class="col-lg-6">
+                <div class="form-group">
+                  <label for="Herhaal_Wachtwoord">Herhaal Wachtwoord</label>
+                  <input type="password" class="form-control" id="Herhaal_Wachtwoord" />
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="form-group">
+                  <label for="Adres">Adres</label>
+                  <input type="text" class="form-control" id="Adres" placeholder="Uw adres en huisnummer" />
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-lg-5">
+                <div class="form-group">
+                  <label for="Land">Land</label>
+                  <select class="form-control" id="Land">
+                    <option>Kies een land</option>
+                    <option>België</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="col-lg-4">
+                <div class="form-group">
+                  <label for="Provincie">Provincie</label>
+                  <select class="form-control" id="Provincie">
+                    <option>Kies een provincie</option>
+                    <option>Antwerpen</option>
+                    <option>Henegouwen</option>
+                    <option>Limburg</option>
+                    <option>Luik</option>
+                    <option>Luxemburg</option>
+                    <option>Namen</option>
+                    <option>Oost-Vlaanderen</option>
+                    <option>Vlaams-Brabant</option>
+                    <option>Waals-Brabant</option>
+                    <option>West-Vlaanderen</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="col-lg-3">
+                <div class="form-group">
+                  <label for="Postcode">Postcode</label>
+                  <input type="text" class="form-control" id="Postcode" />
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-6">
+                <h3>Hou me op de hoogte</h3>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="Inschrijven_Nieuwsbrief" />
+                  <label class="form-check-label" for="Inschrijven_Nieuwsbrief">
+                    Inschrijven voor onze nieuwsbrief
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="Algemene_Voorwaarden" />
+                  <label class="form-check-label" for="Algemene_Voorwaarden">
+                    Ik ga akkoort met de algemene
+                    voorwaarden.
+                  </label>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <h3>Betaling</h3>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="Betaling" id="Banking_App" value="Banking app"
+                    checked="ischecked" />
+                  <label class="form-check-label" for="Banking_App">Banking app</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="Betaling" id="Overschrijving"
+                    value="Overschrijving" />
+                  <label class="form-check-label" for="Overschrijving">Overschrijving</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="Betaling" id="Visa" value="Visa" />
+                  <label class="form-check-label" for="Visa">Visa card</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="Betaling" id="Paypal" value="Paypal" />
+                  <label class="form-check-label" for="Paypal">Paypal</label>
+                </div>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary" style="margin-bottom: 30px; margin-top: 30px">
+              Wave your magic wand
+            </button>
+          </form>
+        </div>
+      </div>
+      <div class="col-lg-4" id="error"></div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
